@@ -553,7 +553,7 @@
       text-align: center;
       // background-color: #99c8b8;
       @media (min-width:768px){
-         padding: 89px 0;
+         padding: 89px 0 30px;
       }
       .section_title{
          color: #0b0b0b;
@@ -563,6 +563,35 @@
          font-weight: 700;
          font-size: 11.567vw;
          font-family: $event-font;
+      }
+      .sponsors{
+         display: flex;
+         flex-wrap: wrap;
+         align-items: center;
+         justify-content: space-around;
+         li{
+            margin:10px 5px;
+            max-width: 136px;
+            @media (min-width:768px){
+               margin:10px 20px;
+               max-width: 200px;
+            }
+            figure{
+               width: 100%;
+               display: block;
+               img{
+                  width: 100%;
+                  height: auto;
+               }
+            }
+         }
+         &.gold{
+            justify-content: center;
+            li{
+               max-width: 300px;
+               width:calc(50% - 20px);
+            }
+         }
       }
    }
    .mail-us{
